@@ -1,2 +1,21 @@
-<h1>OnTaraf::Anasayfa#index</h1>
-<p>Find me in app/views/on_taraf/anasayfa/index.html.erb</p>
+    
+<% if user_signed_in? %>
+    <%= render partial: "layouts/shared/arka_taraf/navbar" %>
+<% else %>    
+    <div class="banner">
+    	<div class="container">
+    	<div class="banner-text">
+    	<div class="banner-heading">
+    	Online Yardımlaşma Sistemi !
+    	</div>
+    	<div class="banner-sub-heading">
+    	Bilginizi Paylaşmak İçin Tek Yapmanız Gereken Giriş Yapmak !
+    	</div>
+    	<button type="button" onclick="location.href='/users/sign_in'" class="btn btn-warning text-dark btn-banner">Giriş Yap</button>
+    	<button type="button" onclick="location.href='/users/sign_up'" class="btn btn-warning text-dark btn-banner">Kayıt Ol</button>
+    	</div>
+    	</div>
+    </div>    
+<% end %>
+
+

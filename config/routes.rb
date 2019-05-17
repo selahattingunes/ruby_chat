@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'online_oda', to: "online_oda#index"
   namespace :on_taraf do
     get 'anasayfa/index'
   end

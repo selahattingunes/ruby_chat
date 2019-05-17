@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_05_12_215629) do
+ActiveRecord::Schema.define(version: 2019_05_17_215322) do
 
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
@@ -20,6 +20,10 @@ ActiveRecord::Schema.define(version: 2019_05_12_215629) do
     t.datetime "remember_created_at"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "resim_file_name"
+    t.string "resim_content_type"
+    t.bigint "resim_file_size"
+    t.datetime "resim_updated_at"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
