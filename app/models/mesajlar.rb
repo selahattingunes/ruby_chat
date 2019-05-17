@@ -1,0 +1,2 @@
+class Mesajlar < ApplicationRecord
+end

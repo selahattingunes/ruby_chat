@@ -1,0 +1,12 @@
+<% if user_signed_in? %>
+    <%= render partial: "layouts/shared/arka_taraf/navbar" %>
+    <br><br></br></br>
+
+    
+    <h1>Editing Userphoto</h1>
+    
+    <%= render 'form', userphoto: @userphoto %>
+    
+    <%= link_to 'Show', @userphoto %> |
+    <%= link_to 'Back', userphotos_path %>
+<% end %>

@@ -10,7 +10,37 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_05_17_215322) do
+ActiveRecord::Schema.define(version: 2019_05_17_224955) do
+
+  create_table "mesajlars", force: :cascade do |t|
+    t.text "mesaj"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer "user_id"
+    t.index ["user_id"], name: "index_mesajlars_on_user_id"
+  end
+
+  create_table "userimages", force: :cascade do |t|
+    t.string "alt"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "resim_file_name"
+    t.string "resim_content_type"
+    t.bigint "resim_file_size"
+    t.datetime "resim_updated_at"
+  end
+
+  create_table "userphotos", force: :cascade do |t|
+    t.string "alt"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "resim_file_name"
+    t.string "resim_content_type"
+    t.bigint "resim_file_size"
+    t.datetime "resim_updated_at"
+    t.integer "user_id"
+    t.index ["user_id"], name: "index_userphotos_on_user_id"
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false

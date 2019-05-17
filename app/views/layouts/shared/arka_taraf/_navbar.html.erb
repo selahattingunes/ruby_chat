@@ -14,7 +14,10 @@
             <ul class="navbar-nav ml-auto">
                 <% if user_signed_in? %>
                     <li>
-                        <a href="/online_oda" class="btn btn-warning text-dark btn-banner">Yardımlaşma Odası</a>
+                        <a href="/userphotos" class="btn btn-warning text-dark btn-banner">Resim Yükle</a>
+                    </li>
+                    <li>
+                        <a href="/online_oda"  style="margin-left:7px;" class="btn btn-warning text-dark btn-banner">Yardımlaşma Odası</a>
                     </li>
                     <li class="nav-item" style="margin-left:7px;">
                         <a class="nav-link"  style="margin-left:7px; color:green">Giriş Yapılan Mail : <strong><%= current_user.email %></strong></a>
