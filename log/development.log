@@ -4673,3 +4673,911 @@ Processing by OnTaraf::AnasayfaController#index as HTML
 Completed 200 OK in 56ms (Views: 54.8ms | ActiveRecord: 0.0ms)
 
 
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/rbenv/versions/2.5.3/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.9ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /usr/local/rbenv/versions/2.5.3/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /usr/local/rbenv/versions/2.5.3/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /usr/local/rbenv/versions/2.5.3/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/rbenv/versions/2.5.3/bin/rake:23
+Started GET "/" for 127.0.0.1 at 2019-05-17 23:42:01 +0000
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by OnTaraf::AnasayfaController#index as HTML
+  Rendering on_taraf/anasayfa/index.html.erb within layouts/application
+  Rendered on_taraf/anasayfa/index.html.erb within layouts/application (4.5ms)
+  Rendered layouts/shared/on_taraf/_header.html.erb (0.5ms)
+  Rendered layouts/shared/on_taraf/_footer.html.erb (1.1ms)
+Completed 200 OK in 9735ms (Views: 9724.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2019-05-17 23:42:18 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered layouts/shared/arka_taraf/_navbar.html.erb (1.2ms)
+  Rendered devise/shared/_links.html.erb (2.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (46.4ms)
+  Rendered layouts/shared/on_taraf/_header.html.erb (0.4ms)
+  Rendered layouts/shared/on_taraf/_footer.html.erb (0.3ms)
+Completed 200 OK in 148ms (Views: 123.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2019-05-17 23:42:20 +0000
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered layouts/shared/arka_taraf/_navbar.html.erb (0.9ms)
+  Rendered devise/shared/_error_messages.html.erb (7.2ms)
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (14.4ms)
+  Rendered layouts/shared/on_taraf/_header.html.erb (0.3ms)
+  Rendered layouts/shared/on_taraf/_footer.html.erb (0.2ms)
+Completed 200 OK in 66ms (Views: 65.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2019-05-17 23:42:24 +0000
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PRnzKJ6jA81/pY75z8pkOFrBmbfsMO/NeqZQ0BCXFV2Wy4by/xLyhxFXn7xMaQJvSBgv0P87BvL9NxDQ/dJSWA==", "user"=>{"email"=>"asd@asd.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Kayıt Ol"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /usr/local/rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "asd@asd.com"], ["LIMIT", 1]]
+  ↳ /usr/local/rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ /usr/local/rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered layouts/shared/arka_taraf/_navbar.html.erb (1.6ms)
+  Rendered devise/shared/_error_messages.html.erb (1.6ms)
+  Rendered devise/shared/_links.html.erb (1.5ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (13.3ms)
+  Rendered layouts/shared/on_taraf/_header.html.erb (0.4ms)
+  Rendered layouts/shared/on_taraf/_footer.html.erb (0.3ms)
+Completed 200 OK in 285ms (Views: 94.2ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2019-05-17 23:42:32 +0000
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tOliO09qyKfWVHtOgMX2PjdSbSlINVobGyTTKnQe/yciVullErdzKun9eupa/wH6Xeh7FQAOWykfeApyN/9P/A==", "user"=>{"email"=>"asd@asd.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Kayıt Ol"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /usr/local/rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "asd@asd.com"], ["LIMIT", 1]]
+  ↳ /usr/local/rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ /usr/local/rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered layouts/shared/arka_taraf/_navbar.html.erb (1.4ms)
+  Rendered devise/shared/_error_messages.html.erb (1.5ms)
+  Rendered devise/shared/_links.html.erb (1.2ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (11.2ms)
+  Rendered layouts/shared/on_taraf/_header.html.erb (0.4ms)
+  Rendered layouts/shared/on_taraf/_footer.html.erb (0.4ms)
+Completed 200 OK in 254ms (Views: 84.6ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2019-05-17 23:42:40 +0000
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ByzDVxZUwfUW467Y/JmEM7LFyniUt94/oHoAETU7aEORk0gJS4l6eClKr3wmo3P32H/cRNyM3w2kJtlJdtrYmA==", "user"=>{"email"=>"asd2@asd2.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Kayıt Ol"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /usr/local/rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "asd2@asd2.com"], ["LIMIT", 1]]
+  ↳ /usr/local/rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Create (1.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "asd2@asd2.com"], ["encrypted_password", "$2a$11$0FH.g53ERLZ2ZFtpp3m5P.zieh8hvh9XpU1Os/032u5YjW.f1mHcK"], ["created_at", "2019-05-17 23:42:40.208550"], ["updated_at", "2019-05-17 23:42:40.208550"]]
+  ↳ /usr/local/rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (29.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /usr/local/rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Redirected to https://localhost-selahattin-gunes-5-1.paiza-user.cloud:3000/
+Completed 302 Found in 195ms (ActiveRecord: 31.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-17 23:42:40 +0000
+Processing by OnTaraf::AnasayfaController#index as HTML
+  Rendering on_taraf/anasayfa/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/on_taraf/anasayfa/index.html.erb:2
+  Rendered layouts/shared/arka_taraf/_navbar.html.erb (1.7ms)
+  Rendered on_taraf/anasayfa/index.html.erb within layouts/application (31.0ms)
+  Rendered layouts/shared/on_taraf/_header.html.erb (0.6ms)
+  Rendered layouts/shared/on_taraf/_footer.html.erb (0.4ms)
+Completed 200 OK in 133ms (Views: 128.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/online_oda" for 127.0.0.1 at 2019-05-17 23:42:43 +0000
+Processing by OnlineOdaController#index as HTML
+  Rendering online_oda/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:1
+  Rendered layouts/shared/arka_taraf/_navbar.html.erb (1.4ms)
+  [1m[36mMesajlar Load (0.3ms)[0m  [1m[34mSELECT "mesajlars".* FROM "mesajlars"[0m
+  ↳ app/views/online_oda/index.html.erb:11
+  [1m[36mUserphoto Load (0.2ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:30
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:31
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:38
+  [1m[36mUserphoto Load (0.2ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:30
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:31
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:38
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:30
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:31
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:38
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:30
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:31
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:38
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:30
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:31
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:38
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:30
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:31
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:38
+  [1m[36mUserphoto Load (0.2ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 3], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:30
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:38
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 3], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:30
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:38
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 3], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:30
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:38
+  Rendered online_oda/index.html.erb within layouts/application (65.7ms)
+  Rendered layouts/shared/on_taraf/_header.html.erb (0.4ms)
+  Rendered layouts/shared/on_taraf/_footer.html.erb (0.4ms)
+Completed 200 OK in 139ms (Views: 130.9ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/userphotos" for 127.0.0.1 at 2019-05-17 23:42:50 +0000
+Processing by UserphotosController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/userphotos_controller.rb:7
+  Rendering userphotos/index.html.erb within layouts/application
+  Rendered layouts/shared/arka_taraf/_navbar.html.erb (1.6ms)
+  [1m[36mUserphoto Load (0.2ms)[0m  [1m[34mSELECT "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ?[0m  [["user_id", 4]]
+  ↳ app/views/userphotos/index.html.erb:19
+  [1m[36mUserphoto Load (0.1ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 4], ["LIMIT", 1]]
+  ↳ app/views/userphotos/index.html.erb:33
+  Rendered userphotos/index.html.erb within layouts/application (6.8ms)
+  Rendered layouts/shared/on_taraf/_header.html.erb (0.3ms)
+  Rendered layouts/shared/on_taraf/_footer.html.erb (0.2ms)
+Completed 200 OK in 68ms (Views: 63.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/userphotos/new" for 127.0.0.1 at 2019-05-17 23:42:52 +0000
+Processing by UserphotosController#new as HTML
+  Rendering userphotos/new.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/userphotos/new.html.erb:1
+  Rendered layouts/shared/arka_taraf/_navbar.html.erb (3.0ms)
+  Rendered userphotos/_form.html.erb (4.7ms)
+  Rendered userphotos/new.html.erb within layouts/application (12.7ms)
+  Rendered layouts/shared/on_taraf/_header.html.erb (0.3ms)
+  Rendered layouts/shared/on_taraf/_footer.html.erb (0.2ms)
+Completed 200 OK in 63ms (Views: 60.9ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/userphotos" for 127.0.0.1 at 2019-05-17 23:42:57 +0000
+Processing by UserphotosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2v7nwjCRaYxri4hjaHTnX4wIKTFLvTaTrDhpRfyYcgAIKtW5O4OO2fDsJ3vID9jPQQn2ZNHxVel4DRUrzutkRA==", "userphoto"=>{"alt"=>"asdqwe", "resim"=>#<ActionDispatch::Http::UploadedFile:0x00007f616e4c5758 @tempfile=#<Tempfile:/tmp/RackMultipart20190517-2534-6n5d18.png>, @original_filename="222.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"userphoto[resim]\"; filename=\"222.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Create Userphoto"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/userphotos_controller.rb:27
+  [1m[36mUserphoto Load (0.1ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/userphotos_controller.rb:27
+[paperclip] Trying to link /tmp/RackMultipart20190517-2534-6n5d18.png to /tmp/bcbe3365e6ac95ea2c0343a2395834dd20190517-2534-183qhrn.png
+[paperclip] Trying to link /tmp/bcbe3365e6ac95ea2c0343a2395834dd20190517-2534-183qhrn.png to /tmp/bcbe3365e6ac95ea2c0343a2395834dd20190517-2534-1pg4mtq.png
+Command :: file -b --mime '/tmp/bcbe3365e6ac95ea2c0343a2395834dd20190517-2534-1pg4mtq.png'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/tmp/bcbe3365e6ac95ea2c0343a2395834dd20190517-2534-183qhrn.png[0]' 2>/dev/null
+Command :: identify -format %m '/tmp/bcbe3365e6ac95ea2c0343a2395834dd20190517-2534-183qhrn.png[0]'
+Command :: convert '/tmp/bcbe3365e6ac95ea2c0343a2395834dd20190517-2534-183qhrn.png[0]' -auto-orient -resize "300x300>" '/tmp/56ca58b8276f1f0b7f03a7c55c9c538820190517-2534-8strug'
+[paperclip] Trying to link /tmp/56ca58b8276f1f0b7f03a7c55c9c538820190517-2534-8strug to /tmp/9ad44760d04f9dd43a105014606ddf6a20190517-2534-1s748kl
+Command :: identify -format '%wx%h,%[exif:orientation]' '/tmp/bcbe3365e6ac95ea2c0343a2395834dd20190517-2534-183qhrn.png[0]' 2>/dev/null
+Command :: identify -format %m '/tmp/bcbe3365e6ac95ea2c0343a2395834dd20190517-2534-183qhrn.png[0]'
+Command :: convert '/tmp/bcbe3365e6ac95ea2c0343a2395834dd20190517-2534-183qhrn.png[0]' -auto-orient -resize "100x100>" '/tmp/56ca58b8276f1f0b7f03a7c55c9c538820190517-2534-ft67bs'
+[paperclip] Trying to link /tmp/56ca58b8276f1f0b7f03a7c55c9c538820190517-2534-ft67bs to /tmp/1bef74cc92eb84ea56d63fbda97281b920190517-2534-mzen3p
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/userphotos_controller.rb:31
+[paperclip] Trying to link /tmp/bcbe3365e6ac95ea2c0343a2395834dd20190517-2534-183qhrn.png to /tmp/bcbe3365e6ac95ea2c0343a2395834dd20190517-2534-qfl5ue.png
+Command :: file -b --mime '/tmp/bcbe3365e6ac95ea2c0343a2395834dd20190517-2534-qfl5ue.png'
+  [1m[36mUserphoto Create (1.1ms)[0m  [1m[32mINSERT INTO "userphotos" ("alt", "created_at", "updated_at", "resim_file_name", "resim_content_type", "resim_file_size", "resim_updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["alt", "asdqwe"], ["created_at", "2019-05-17 23:42:57.980184"], ["updated_at", "2019-05-17 23:42:57.980184"], ["resim_file_name", "222.png"], ["resim_content_type", "image/png"], ["resim_file_size", 6746], ["resim_updated_at", "2019-05-17 23:42:57.485531"], ["user_id", 4]]
+  ↳ app/controllers/userphotos_controller.rb:31
+  [1m[35m (10.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/userphotos_controller.rb:31
+Redirected to https://localhost-selahattin-gunes-5-1.paiza-user.cloud:3000/userphotos/8
+Completed 302 Found in 524ms (ActiveRecord: 11.9ms)
+
+
+Started GET "/userphotos/8" for 127.0.0.1 at 2019-05-17 23:42:58 +0000
+Processing by UserphotosController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUserphoto Load (0.2ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/userphotos_controller.rb:69
+  Rendering userphotos/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/userphotos/show.html.erb:1
+  Rendered layouts/shared/arka_taraf/_navbar.html.erb (0.8ms)
+  Rendered userphotos/show.html.erb within layouts/application (4.1ms)
+  Rendered layouts/shared/on_taraf/_header.html.erb (0.3ms)
+  Rendered layouts/shared/on_taraf/_footer.html.erb (0.2ms)
+Completed 200 OK in 54ms (Views: 51.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/userphotos" for 127.0.0.1 at 2019-05-17 23:43:00 +0000
+Processing by UserphotosController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/userphotos_controller.rb:7
+  Rendering userphotos/index.html.erb within layouts/application
+  Rendered layouts/shared/arka_taraf/_navbar.html.erb (0.8ms)
+  [1m[36mUserphoto Load (0.1ms)[0m  [1m[34mSELECT "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ?[0m  [["user_id", 4]]
+  ↳ app/views/userphotos/index.html.erb:19
+  [1m[36mUserphoto Load (0.1ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 4], ["LIMIT", 1]]
+  ↳ app/views/userphotos/index.html.erb:33
+  Rendered userphotos/index.html.erb within layouts/application (3.8ms)
+  Rendered layouts/shared/on_taraf/_header.html.erb (0.3ms)
+  Rendered layouts/shared/on_taraf/_footer.html.erb (0.2ms)
+Completed 200 OK in 51ms (Views: 48.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/online_oda" for 127.0.0.1 at 2019-05-17 23:43:04 +0000
+Processing by OnlineOdaController#index as HTML
+  Rendering online_oda/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:1
+  Rendered layouts/shared/arka_taraf/_navbar.html.erb (1.0ms)
+  [1m[36mMesajlar Load (0.1ms)[0m  [1m[34mSELECT "mesajlars".* FROM "mesajlars"[0m
+  ↳ app/views/online_oda/index.html.erb:11
+  [1m[36mUserphoto Load (0.1ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:30
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:31
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:38
+  [1m[36mUserphoto Load (0.1ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:30
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:31
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:38
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:30
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:31
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:38
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:30
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:31
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:38
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:30
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:31
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:38
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:30
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:31
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:38
+  [1m[36mUserphoto Load (0.1ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 3], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:30
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:38
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 3], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:30
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:38
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 3], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:30
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:38
+  Rendered online_oda/index.html.erb within layouts/application (18.7ms)
+  Rendered layouts/shared/on_taraf/_header.html.erb (0.3ms)
+  Rendered layouts/shared/on_taraf/_footer.html.erb (0.2ms)
+Completed 200 OK in 68ms (Views: 65.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/messajcontroller/create?message=naber+conconlar" for 127.0.0.1 at 2019-05-17 23:43:08 +0000
+Processing by MessajcontrollerController#create as HTML
+  Parameters: {"message"=>"naber conconlar"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/messajcontroller_controller.rb:4
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messajcontroller_controller.rb:4
+  [1m[36mMesajlar Create (1.6ms)[0m  [1m[32mINSERT INTO "mesajlars" ("mesaj", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["mesaj", "naber conconlar"], ["created_at", "2019-05-17 23:43:08.876804"], ["updated_at", "2019-05-17 23:43:08.876804"], ["user_id", 4]]
+  ↳ app/controllers/messajcontroller_controller.rb:4
+  [1m[35m (7.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messajcontroller_controller.rb:4
+Redirected to https://localhost-selahattin-gunes-5-1.paiza-user.cloud:3000/online_oda
+Completed 302 Found in 17ms (ActiveRecord: 9.0ms)
+
+
+Started GET "/online_oda" for 127.0.0.1 at 2019-05-17 23:43:09 +0000
+Processing by OnlineOdaController#index as HTML
+  Rendering online_oda/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:1
+  Rendered layouts/shared/arka_taraf/_navbar.html.erb (1.1ms)
+  [1m[36mMesajlar Load (0.1ms)[0m  [1m[34mSELECT "mesajlars".* FROM "mesajlars"[0m
+  ↳ app/views/online_oda/index.html.erb:11
+  [1m[36mUserphoto Load (0.1ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:30
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:31
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:38
+  [1m[36mUserphoto Load (0.1ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:30
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:31
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:38
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:30
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:31
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:38
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:30
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:31
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:38
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:30
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:31
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:38
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:30
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:31
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:38
+  [1m[36mUserphoto Load (0.3ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 3], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:30
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:38
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 3], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:30
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:38
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 3], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:30
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:38
+  [1m[36mUserphoto Load (0.2ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 4], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:20
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 4], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:21
+  Rendered online_oda/index.html.erb within layouts/application (53.5ms)
+  Rendered layouts/shared/on_taraf/_header.html.erb (0.3ms)
+  Rendered layouts/shared/on_taraf/_footer.html.erb (0.3ms)
+Completed 200 OK in 104ms (Views: 100.6ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/messajcontroller/create?message=iyi+misiniz" for 127.0.0.1 at 2019-05-17 23:43:22 +0000
+Processing by MessajcontrollerController#create as HTML
+  Parameters: {"message"=>"iyi misiniz"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/messajcontroller_controller.rb:4
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messajcontroller_controller.rb:4
+  [1m[36mMesajlar Create (0.8ms)[0m  [1m[32mINSERT INTO "mesajlars" ("mesaj", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["mesaj", "iyi misiniz"], ["created_at", "2019-05-17 23:43:22.074140"], ["updated_at", "2019-05-17 23:43:22.074140"], ["user_id", 4]]
+  ↳ app/controllers/messajcontroller_controller.rb:4
+  [1m[35m (5.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messajcontroller_controller.rb:4
+Redirected to https://localhost-selahattin-gunes-5-1.paiza-user.cloud:3000/online_oda
+Completed 302 Found in 11ms (ActiveRecord: 6.5ms)
+
+
+Started GET "/online_oda" for 127.0.0.1 at 2019-05-17 23:43:22 +0000
+Processing by OnlineOdaController#index as HTML
+  Rendering online_oda/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:1
+  Rendered layouts/shared/arka_taraf/_navbar.html.erb (0.8ms)
+  [1m[36mMesajlar Load (0.1ms)[0m  [1m[34mSELECT "mesajlars".* FROM "mesajlars"[0m
+  ↳ app/views/online_oda/index.html.erb:11
+  [1m[36mUserphoto Load (0.1ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:30
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:31
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:38
+  [1m[36mUserphoto Load (0.1ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:30
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:31
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:38
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:30
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:31
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:38
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:30
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:31
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:38
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:30
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:31
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:38
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:30
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:31
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:38
+  [1m[36mUserphoto Load (0.1ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 3], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:30
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:38
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 3], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:30
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:38
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 3], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:30
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:38
+  [1m[36mUserphoto Load (0.1ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 4], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:20
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 4], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:21
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 4], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:20
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 4], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:21
+  Rendered online_oda/index.html.erb within layouts/application (19.9ms)
+  Rendered layouts/shared/on_taraf/_header.html.erb (0.3ms)
+  Rendered layouts/shared/on_taraf/_footer.html.erb (0.2ms)
+Completed 200 OK in 65ms (Views: 62.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/messajcontroller/create?message=bir%C5%9Fey+soracam" for 127.0.0.1 at 2019-05-17 23:43:38 +0000
+Processing by MessajcontrollerController#create as HTML
+  Parameters: {"message"=>"birşey soracam"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/messajcontroller_controller.rb:4
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messajcontroller_controller.rb:4
+  [1m[36mMesajlar Create (1.4ms)[0m  [1m[32mINSERT INTO "mesajlars" ("mesaj", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["mesaj", "birşey soracam"], ["created_at", "2019-05-17 23:43:38.304226"], ["updated_at", "2019-05-17 23:43:38.304226"], ["user_id", 4]]
+  ↳ app/controllers/messajcontroller_controller.rb:4
+  [1m[35m (22.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messajcontroller_controller.rb:4
+Redirected to https://localhost-selahattin-gunes-5-1.paiza-user.cloud:3000/online_oda
+Completed 302 Found in 31ms (ActiveRecord: 24.4ms)
+
+
+Started GET "/online_oda" for 127.0.0.1 at 2019-05-17 23:43:38 +0000
+Processing by OnlineOdaController#index as HTML
+  Rendering online_oda/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:1
+  Rendered layouts/shared/arka_taraf/_navbar.html.erb (0.9ms)
+  [1m[36mMesajlar Load (0.2ms)[0m  [1m[34mSELECT "mesajlars".* FROM "mesajlars"[0m
+  ↳ app/views/online_oda/index.html.erb:11
+  [1m[36mUserphoto Load (0.1ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:30
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:31
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:38
+  [1m[36mUserphoto Load (0.1ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:30
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:31
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:38
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:30
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:31
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:38
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:30
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:31
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:38
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:30
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:31
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:38
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:30
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:31
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:38
+  [1m[36mUserphoto Load (0.1ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 3], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:30
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:38
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 3], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:30
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:38
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 3], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:30
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:38
+  [1m[36mUserphoto Load (0.1ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 4], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:20
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 4], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:21
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 4], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:20
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 4], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:21
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 4], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:20
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 4], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:21
+  Rendered online_oda/index.html.erb within layouts/application (27.6ms)
+  Rendered layouts/shared/on_taraf/_header.html.erb (0.3ms)
+  Rendered layouts/shared/on_taraf/_footer.html.erb (0.2ms)
+Completed 200 OK in 73ms (Views: 70.0ms | ActiveRecord: 1.5ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2019-05-17 23:43:41 +0000
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"qnS39RQuu3bsFGtvv+Le+8UrgXA2PzwKtKPQXzpE5/U8yzyrSfMA+9O9astl2Ck/r5GXTH4EPTiw/wkHeaVXLg=="}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ /usr/local/rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /usr/local/rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /usr/local/rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Redirected to https://localhost-selahattin-gunes-5-1.paiza-user.cloud:3000/
+Completed 302 Found in 15ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-17 23:43:42 +0000
+Processing by OnTaraf::AnasayfaController#index as HTML
+  Rendering on_taraf/anasayfa/index.html.erb within layouts/application
+  Rendered on_taraf/anasayfa/index.html.erb within layouts/application (1.1ms)
+  Rendered layouts/shared/on_taraf/_header.html.erb (0.3ms)
+  Rendered layouts/shared/on_taraf/_footer.html.erb (0.2ms)
+Completed 200 OK in 59ms (Views: 56.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2019-05-17 23:43:43 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered layouts/shared/arka_taraf/_navbar.html.erb (0.8ms)
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.7ms)
+  Rendered layouts/shared/on_taraf/_header.html.erb (0.3ms)
+  Rendered layouts/shared/on_taraf/_footer.html.erb (0.2ms)
+Completed 200 OK in 52ms (Views: 51.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2019-05-17 23:43:47 +0000
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5dCH2l3YKhuHuZz17+xey7HhznSuig1O7KbVfHW7tP+XVbYfuLrieYRyme0kL+9XyL8D2P8E04dHjnbKp+hZCQ==", "user"=>{"email"=>"asd@asd.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Giriş Yap"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "asd@asd.com"], ["LIMIT", 1]]
+  ↳ /usr/local/rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Redirected to https://localhost-selahattin-gunes-5-1.paiza-user.cloud:3000/
+Completed 302 Found in 157ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-17 23:43:47 +0000
+Processing by OnTaraf::AnasayfaController#index as HTML
+  Rendering on_taraf/anasayfa/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/on_taraf/anasayfa/index.html.erb:2
+  Rendered layouts/shared/arka_taraf/_navbar.html.erb (1.0ms)
+  Rendered on_taraf/anasayfa/index.html.erb within layouts/application (3.6ms)
+  Rendered layouts/shared/on_taraf/_header.html.erb (0.3ms)
+  Rendered layouts/shared/on_taraf/_footer.html.erb (0.2ms)
+Completed 200 OK in 50ms (Views: 48.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/online_oda" for 127.0.0.1 at 2019-05-17 23:43:50 +0000
+Processing by OnlineOdaController#index as HTML
+  Rendering online_oda/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:1
+  Rendered layouts/shared/arka_taraf/_navbar.html.erb (1.0ms)
+  [1m[36mMesajlar Load (0.2ms)[0m  [1m[34mSELECT "mesajlars".* FROM "mesajlars"[0m
+  ↳ app/views/online_oda/index.html.erb:11
+  [1m[36mUserphoto Load (0.1ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:20
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:21
+  [1m[36mUserphoto Load (0.1ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:30
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:31
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:38
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:30
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:31
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:38
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:30
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:31
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:38
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:30
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:31
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:38
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:30
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:31
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:38
+  [1m[36mUserphoto Load (0.1ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 3], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:30
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:38
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 3], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:30
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:38
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 3], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:30
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:38
+  [1m[36mUserphoto Load (0.1ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 4], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:30
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 4], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:31
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:38
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 4], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:30
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 4], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:31
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:38
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 4], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:30
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 4], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:31
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:38
+  Rendered online_oda/index.html.erb within layouts/application (35.3ms)
+  Rendered layouts/shared/on_taraf/_header.html.erb (0.3ms)
+  Rendered layouts/shared/on_taraf/_footer.html.erb (0.2ms)
+Completed 200 OK in 83ms (Views: 79.5ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/messajcontroller/create?message=buyur+sor+garda%C5%9F" for 127.0.0.1 at 2019-05-17 23:43:59 +0000
+Processing by MessajcontrollerController#create as HTML
+  Parameters: {"message"=>"buyur sor gardaş"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/messajcontroller_controller.rb:4
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messajcontroller_controller.rb:4
+  [1m[36mMesajlar Create (1.0ms)[0m  [1m[32mINSERT INTO "mesajlars" ("mesaj", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["mesaj", "buyur sor gardaş"], ["created_at", "2019-05-17 23:43:59.502599"], ["updated_at", "2019-05-17 23:43:59.502599"], ["user_id", 1]]
+  ↳ app/controllers/messajcontroller_controller.rb:4
+  [1m[35m (5.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messajcontroller_controller.rb:4
+Redirected to https://localhost-selahattin-gunes-5-1.paiza-user.cloud:3000/online_oda
+Completed 302 Found in 13ms (ActiveRecord: 6.7ms)
+
+
+Started GET "/online_oda" for 127.0.0.1 at 2019-05-17 23:43:59 +0000
+Processing by OnlineOdaController#index as HTML
+  Rendering online_oda/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:1
+  Rendered layouts/shared/arka_taraf/_navbar.html.erb (1.0ms)
+  [1m[36mMesajlar Load (0.1ms)[0m  [1m[34mSELECT "mesajlars".* FROM "mesajlars"[0m
+  ↳ app/views/online_oda/index.html.erb:11
+  [1m[36mUserphoto Load (0.1ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:20
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:21
+  [1m[36mUserphoto Load (0.1ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:30
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:31
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:38
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:30
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:31
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:38
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:30
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:31
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:38
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:30
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:31
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:38
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:30
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:31
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:38
+  [1m[36mUserphoto Load (0.1ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 3], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:30
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:38
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 3], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:30
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:38
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 3], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:30
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:38
+  [1m[36mUserphoto Load (0.1ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 4], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:30
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 4], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:31
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:38
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 4], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:30
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 4], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:31
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:38
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 4], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:30
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 4], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:31
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:38
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:20
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:21
+  Rendered online_oda/index.html.erb within layouts/application (24.4ms)
+  Rendered layouts/shared/on_taraf/_header.html.erb (0.3ms)
+  Rendered layouts/shared/on_taraf/_footer.html.erb (0.2ms)
+Completed 200 OK in 69ms (Views: 66.6ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/messajcontroller/create?message=bu+arada+resmin+%C3%A7ok+g%C3%BCzel" for 127.0.0.1 at 2019-05-17 23:44:11 +0000
+Processing by MessajcontrollerController#create as HTML
+  Parameters: {"message"=>"bu arada resmin çok güzel"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/messajcontroller_controller.rb:4
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messajcontroller_controller.rb:4
+  [1m[36mMesajlar Create (0.9ms)[0m  [1m[32mINSERT INTO "mesajlars" ("mesaj", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["mesaj", "bu arada resmin çok güzel"], ["created_at", "2019-05-17 23:44:11.075260"], ["updated_at", "2019-05-17 23:44:11.075260"], ["user_id", 1]]
+  ↳ app/controllers/messajcontroller_controller.rb:4
+  [1m[35m (5.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messajcontroller_controller.rb:4
+Redirected to https://localhost-selahattin-gunes-5-1.paiza-user.cloud:3000/online_oda
+Completed 302 Found in 12ms (ActiveRecord: 6.6ms)
+
+
+Started GET "/online_oda" for 127.0.0.1 at 2019-05-17 23:44:11 +0000
+Processing by OnlineOdaController#index as HTML
+  Rendering online_oda/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:1
+  Rendered layouts/shared/arka_taraf/_navbar.html.erb (0.9ms)
+  [1m[36mMesajlar Load (0.2ms)[0m  [1m[34mSELECT "mesajlars".* FROM "mesajlars"[0m
+  ↳ app/views/online_oda/index.html.erb:11
+  [1m[36mUserphoto Load (0.1ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:20
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:21
+  [1m[36mUserphoto Load (0.1ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:30
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:31
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:38
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:30
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:31
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:38
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:30
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:31
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:38
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:30
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:31
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:38
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:30
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:31
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:38
+  [1m[36mUserphoto Load (0.1ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 3], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:30
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:38
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 3], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:30
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:38
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 3], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:30
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:38
+  [1m[36mUserphoto Load (0.1ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 4], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:30
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 4], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:31
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:38
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 4], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:30
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 4], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:31
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:38
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 4], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:30
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 4], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:31
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:38
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:20
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:21
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:20
+  [1m[36mCACHE Userphoto Load (0.0ms)[0m  [1m[34mSELECT  "userphotos".* FROM "userphotos" WHERE "userphotos"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
+  ↳ app/views/online_oda/index.html.erb:21
+  Rendered online_oda/index.html.erb within layouts/application (35.4ms)
+  Rendered layouts/shared/on_taraf/_header.html.erb (0.3ms)
+  Rendered layouts/shared/on_taraf/_footer.html.erb (0.2ms)
+Completed 200 OK in 90ms (Views: 87.0ms | ActiveRecord: 1.6ms)
+
+
